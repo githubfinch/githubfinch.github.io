@@ -45,48 +45,47 @@ ul.posts li {
 
 /*new submenu stuff */
 
-/* Navigation */
-nav ul {
+/* Main navigation */
+
+nav > ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
-nav ul li {
+nav > ul > li {
     display: block;
     margin-right: 20px;
     position: relative;
 }
 
-nav a {
-    display: block;
-    padding: 10px 0;
-}
 
-/* Dropdown menu */
+/* Dropdown */
+
 nav .submenu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 180px;
+    width: 180px;
     margin: 0;
     padding: 0;
     background: #444;
     z-index: 9999;
 }
 
-/* Show dropdown */
 nav .dropdown:hover > .submenu {
     display: block;
 }
 
-/* Dropdown entries */
+
+/* Dropdown items */
+
 nav .submenu li {
     display: block;
-    width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 nav .submenu li a {
