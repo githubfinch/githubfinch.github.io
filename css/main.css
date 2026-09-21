@@ -83,6 +83,7 @@ nav .dropdown:hover .submenu {
 nav .submenu li {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 nav .submenu a {
