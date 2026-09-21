@@ -62,7 +62,7 @@ nav a {
 }
 
 /* Hide submenu */
-nav .submenu {
+nav .dropdown .submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -71,7 +71,7 @@ nav .submenu {
     padding: 0;
     min-width: 150px;
     background: white;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 /* Show submenu */
@@ -80,18 +80,19 @@ nav .dropdown:hover .submenu {
 }
 
 /* Submenu items */
-nav .submenu li {
+nav .dropdown .submenu li {
     display: block;
+    float: none;
     width: 100%;
     height: auto;
 }
 
-nav .submenu a {
+nav .dropdown .submenu a {
     display: block;
     white-space: nowrap;
 }
 
-nav .submenu a:hover {
+nav .dropdown .submenu a:hover {
     background: #eee;
 }
 
