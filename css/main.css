@@ -45,6 +45,56 @@ ul.posts li {
 
 /*new submenu stuff */
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+}
+
+/* Hide submenu */
+nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    background: white;
+    z-index: 1000;
+}
+
+/* Show submenu */
+nav .dropdown:hover .submenu {
+    display: block;
+}
+
+/* Submenu items */
+nav .submenu li {
+    display: block;
+    width: 100%;
+}
+
+nav .submenu a {
+    display: block;
+    white-space: nowrap;
+}
+
+nav .submenu a:hover {
+    background: #eee;
+}
+
+
 .submenu a {
     display: none;
     position: absolute;
