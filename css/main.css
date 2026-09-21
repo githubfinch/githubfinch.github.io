@@ -197,3 +197,33 @@ nav > ul > li {
         column-count: 1;
     }
 }
+
+/* filters*/
+
+/* FILTERS */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0 45px;
+}
+
+.filter {
+    border: 1px solid #999;
+    background: transparent;
+    padding: 7px 14px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #555;
+
+    cursor: pointer;
+}
+
+.filter:hover,
+.filter.active {
+    background: #444;
+    border-color: #444;
+    color: white;
+}
