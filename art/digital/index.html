@@ -243,3 +243,40 @@ title: Digital
   </div>
   
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filters = document.querySelectorAll(".filter");
+    const items = document.querySelectorAll(".masonry-item");
+
+    filters.forEach(function (filter) {
+
+        filter.addEventListener("click", function () {
+
+            const selected = this.dataset.filter;
+
+            filters.forEach(function (button) {
+                button.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+            items.forEach(function (item) {
+
+                const tags = item.dataset.tags.split(" ");
+
+                if (selected === "all" || tags.includes(selected)) {
+                    item.style.display = "inline-block";
+                } else {
+                    item.style.display = "none";
+                }
+
+            });
+
+        });
+
+    });
+
+});
+</script>
