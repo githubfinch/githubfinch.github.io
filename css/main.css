@@ -43,7 +43,7 @@ ul.posts li {
     list-style: none;
 }
 
-/*new submenu stuff */
+/*new submenu stuff -------------------------------*/
 
 nav > ul {
     display: flex;
@@ -86,4 +86,51 @@ nav > ul > li {
 
 .submenu a:hover {
     background: #666;
+}
+
+/* masonry---------------------------------------*/
+
+.masonry {
+    column-count: 3;
+    column-gap: 40px;
+    margin-top: 50px;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 50px;
+}
+
+.masonry-item a {
+    display: block;
+}
+
+.masonry-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.masonry-item h2 {
+    margin: 12px 0 0;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 15px;
+    font-weight: normal;
+    color: #333;
+}
+
+.masonry-item img:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .masonry {
+        column-count: 1;
+    }
 }
