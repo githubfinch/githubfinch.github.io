@@ -45,6 +45,7 @@ ul.posts li {
 
 /*new submenu stuff */
 
+/* Navigation */
 nav ul {
     list-style: none;
     margin: 0;
@@ -52,71 +53,49 @@ nav ul {
     display: flex;
 }
 
-nav li {
+nav ul li {
+    display: block;
+    margin-right: 20px;
     position: relative;
 }
 
 nav a {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 0;
 }
 
-/* Hide submenu */
-nav .dropdown .submenu {
+/* Dropdown menu */
+nav .submenu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
+    min-width: 180px;
     margin: 0;
     padding: 0;
-    min-width: 150px;
-    background: white;
+    background: #444;
     z-index: 9999;
 }
 
-/* Show submenu */
-nav .dropdown:hover .submenu {
+/* Show dropdown */
+nav .dropdown:hover > .submenu {
     display: block;
 }
 
-/* Submenu items */
-nav .dropdown .submenu li {
+/* Dropdown entries */
+nav .submenu li {
     display: block;
-    float: none;
     width: 100%;
-    height: auto;
+    margin: 0;
 }
 
-nav .dropdown .submenu a {
+nav .submenu li a {
     display: block;
+    padding: 12px 16px;
+    color: white;
     white-space: nowrap;
 }
 
-nav .dropdown .submenu a:hover {
-    background: #eee;
-}
-
-
-.submenu a {
-    display: none;
-    position: absolute;
-    top:100%;
-    left:0;
-    min-width: 180px;
-    paddiing: 0;
-    margin: 0;
-    list-style: none;
-    background: #444;
-}
-
-.dropdown:hover .submenu {
-    display: block;
-}
-
-.submenu a {
-    padding: 12px 16px;
-}
-
-.submenu a:hover{
+nav .submenu li a:hover {
     background: #666;
 }
