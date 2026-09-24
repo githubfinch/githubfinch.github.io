@@ -4,6 +4,7 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 		</head>
 		<body>
 			<nav>
@@ -33,6 +34,19 @@
 	        		<li><a href="mailto:brassicapekinensis@gmail.com">email</a></li>
 	        		<li><a href="https://github.com/githubfinch">github.com/githubfinch</a></li>
 				</ul>
+				
+		        <div class="qr-code">
+		            <p>Scan to visit my website!</p>
+		            <div id="qrcode"></div>
+		        </div>
+		
+		        <script>
+		            new QRCode(document.getElementById("qrcode"), {
+		                text: "https://githubfinch.github.io",
+		                width: 150,
+		                height: 150
+		            });
+		        </script>
 			</footer>
 		</body>
 	</html>
