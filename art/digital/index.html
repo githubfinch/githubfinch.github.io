@@ -16,6 +16,37 @@ title: Digital
     <button class="filter" data-filter="digi">Digital</button>
 </div>
 
+<script>
+const filters = document.querySelectorAll('.filter');
+
+filters.forEach(filter => {
+    filter.addEventListener('click', () => {
+        const isAll = filter.dataset.filter === 'all';
+
+        if (isAll) {
+            filters.forEach(f => f.classList.remove('active'));
+            filter.classList.add('active');
+        } else {
+            filter.classList.toggle('active');
+
+            document
+                .querySelector('.filter[data-filter="all"]')
+                .classList.remove('active');
+
+            const anySelected = [...filters].some(
+                f => f.classList.contains('active')
+            );
+
+            if (!anySelected) {
+                document
+                    .querySelector('.filter[data-filter="all"]')
+                    .classList.add('active');
+            }
+        }
+    });
+});
+</script>
+
 <div class="masonry">
 <!-- ------------------------------------------------------------------ -->
   <div class="masonry-item" data-tags="digi sci">
