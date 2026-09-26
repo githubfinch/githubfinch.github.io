@@ -3,6 +3,12 @@ body {
     width: 70%;
     background-color: #EDE2DA;
 }
+body img {
+    width: 70vw;
+    height: auto;
+    display: block;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
