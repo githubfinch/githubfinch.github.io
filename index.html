@@ -7,3 +7,15 @@ title: a bird's breakfast
 	<p>Well, the name on my passport is Jiarong Gu, and I used to go by Rosetta and Ray at school and uni.</em> Now that I'm happily married to a Lithuanian, you can also call me Egl&#279 Juod&#382balien&#279. <a href="/about">Read more about my life...</a></p>
 	<p>The website is still a work in progress, come back later to see what I've added!</p>
 </div><!-- /.blurb -->
+<div class="qr-code">
+	<p>Scan to visit my website!</p>
+	<div id="qrcode"></div>
+</div>
+
+<script>
+	new QRCode(document.getElementById("qrcode"), {
+		text: "https://githubfinch.github.io",
+		width: 150,
+		height: 150
+	});
+</script>
