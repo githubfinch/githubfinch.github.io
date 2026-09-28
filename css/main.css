@@ -9,7 +9,7 @@ body img {
     display: block;
 }
 p{
-    text-align: center;
+    text-align: justify;
 }
 #qrcode {
     width: 10vw;
