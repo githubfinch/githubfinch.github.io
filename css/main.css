@@ -8,6 +8,9 @@ body img {
     height: auto;
     display: block;
 }
+p{
+    text-align: center;
+}
 #qrcode {
     width: 10vw;
     height: 10vw;
