@@ -258,3 +258,19 @@ nav > ul > li {
     font-size: 28px;
     margin-top: 28px;
 }
+
+.text-video {
+    float: left;
+    width: 35%;
+    height: auto;
+    margin: 0 25px 15px 0;
+    display: block;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .text-video {
+        width: 50%;
+        margin-right: 15px;
+    }
+}
