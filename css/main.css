@@ -260,16 +260,19 @@ nav > ul > li {
 }
 
 .inline-video {
-    display: inline-block;
-    vertical-align: middle;
-    width: 180px;
-    margin: 0 10px;
+    display: block;
+    width: 100%;
+    max-width: 100%
+    margin: 25 0px;
+    padding: 0;
 }
 
 .inline-video video {
     display: block;
     width: 100%;
     height: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .inline-video figcaption {
