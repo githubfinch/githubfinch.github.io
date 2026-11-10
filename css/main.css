@@ -259,18 +259,24 @@ nav > ul > li {
     margin-top: 28px;
 }
 
-.text-video {
-    float: left;
-    width: 35%;
-    height: auto;
-    margin: 0 25px 15px 0;
-    display: block;
+.inline-video {
+    display: inline-block;
+    vertical-align: middle;
+    width: 180px;
+    margin: 0 10px;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-    .text-video {
-        width: 50%;
-        margin-right: 15px;
-    }
+.inline-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.inline-video figcaption {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #777;
+    font-style: italic;
+    text-align: center;
 }
